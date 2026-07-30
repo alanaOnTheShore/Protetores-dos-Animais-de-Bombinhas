@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
 :root {
   --branco: rgba(255, 255, 255, 1);
   --preto: rgba(0, 0, 0, 1);
@@ -6,8 +8,6 @@
   --secundaria: rgba(235, 142, 46, 1);
   --contraste-medio-principal: rgba(138, 56, 245, 1);
 }
-
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 * {
   box-sizing: border-box;
@@ -221,6 +221,8 @@ p {
     height: auto;
     margin-top: -100px;
     align-items: center;
+    width: 100%;
+    overflow: hidden;
   }
 
   .img-gato-e-cachorro {
