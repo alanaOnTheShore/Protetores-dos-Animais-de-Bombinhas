@@ -31,6 +31,7 @@ li {
   list-style: none;
 }
 
+/*LOGO*/
 .logo-container {
   display: flex;
   align-items: center;
@@ -43,6 +44,7 @@ li {
   display: block;
 }
 
+/*frase ao lado da logo*/
 .sublogo {
   font-weight: 500;
   font-size: 20px;
@@ -66,6 +68,7 @@ li {
   margin-top: 10px;
   gap: 15px;
 }
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -103,46 +106,68 @@ p {
   line-height: 1.6;
 }
 
-#intro {
+/*INTRO*/
+.intro {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
+  justify-content: center;
   height: 558px;
+  width: 100%;
+  margin-top: -150px;
+  overflow: hidden; /* para cortar as imagens maiores que a tela (pensando em dispositivos menores) */
   z-index: 2; /* posição 2 (por cima do hero) */
 }
 
+.intro-card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  right: 5vw;
+  gap: 15px;
+  max-width: 570px;
+  text-align: right;
+  color: var(--branco);
+  z-index: 10;
+}
+
+.intro-card h3 {
+  line-height: 1.2;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.texto p {
+  font-weight: 500;
+}
+
 .img-gato-e-cachorro {
-  margin-top: -150px; /* negativo para puxar pra cima do hero*/
   width: 100%;
   height: auto;
   display: block;
+  filter: brightness(0.6);
 }
 
-.camada-de-sombra {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 558px;
-  background-color: #0000004c;
+.btn-doar {
+  display: inline-block;
+  background-color: var(--principal);
+  color: var(--branco);
+  padding: 7px 33px;
+  border-radius: 10px;
+  font-weight: 500;
 }
 
-/*TELAS MENORES*/
-@media (max-width: 1024px) {
-  .navbar {
-    padding: 20px 30px;
-  }
-  .hero {
-    border-radius: 0px;
-  }
-  .sublogo {
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
-    line-height: 1.6;
-  }
-  .img-gato-e-cachorro {
-    margin-top: -80;
-  }
+.btn-doar:hover {
+  background-color: var(--secundaria);
 }
+
+/***TELAS MENORES***/
 /*menu hamburguer*/
 #hamburguer {
   display: none;
@@ -153,15 +178,21 @@ p {
   color: var(--branco);
   padding: 20px;
 }
+
+/*dispositivo movel*/
 @media (max-width: 768px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
   #hamburguer {
     display: block;
   }
 
   .menu {
     position: absolute;
-    top: 80px;
-    right: 40px;
+    top: 100px;
+    width: 80%;
     gap: 15px;
     background: var(--contraste-leve-principal);
     text-align: center;
@@ -175,8 +206,35 @@ p {
   .menu.ativa {
     display: flex;
   }
+
+  .hero {
+    border-radius: 0px;
+  }
+
+  .sublogo {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    line-height: 1.6;
+  }
+
+  .intro {
+    height: auto;
+    margin-top: -100px;
+    align-items: center;
+  }
+
+  .img-gato-e-cachorro {
+    width: 240%;
+  }
+
+  .intro-card {
+    text-align: center;
+    right: auto;
+    width: 90%;
+    padding: 0 10px;
+  }
 }
 
 html {
   scroll-behavior: smooth;
 }
+
