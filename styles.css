@@ -127,6 +127,8 @@ p {
   position: absolute;
   align-items: center;
   right: 5vw;
+  top: 50%;
+  transform: translateY(-50%);
   gap: 15px;
   max-width: 570px;
   text-align: right;
@@ -234,6 +236,9 @@ p {
     right: auto;
     width: 90%;
     padding: 0 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
