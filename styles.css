@@ -31,6 +31,18 @@ li {
   list-style: none;
 }
 
+p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+h3 {
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+
 /*LOGO*/
 .logo-container {
   display: flex;
@@ -102,11 +114,6 @@ li {
   line-height: 1.2;
 }
 
-p {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  line-height: 1.6;
-}
-
 /*INTRO*/
 .intro {
   display: flex;
@@ -136,10 +143,6 @@ p {
   z-index: 10;
 }
 
-.intro-card h3 {
-  line-height: 1.2;
-}
-
 .texto {
   display: flex;
   flex-direction: column;
@@ -157,16 +160,122 @@ p {
   filter: brightness(0.6);
 }
 
-.btn-doar {
+.btn-simples {
   display: inline-block;
   background-color: var(--principal);
   color: var(--branco);
   padding: 7px 33px;
   border-radius: 10px;
   font-weight: 500;
+  text-align: center;
 }
 
-.btn-doar:hover {
+.btn-simples:hover {
+  background-color: var(--secundaria);
+}
+
+/*SOBRE*/
+.sobre {
+  display: flex;
+  flex-direction: column;
+  max-width: 590px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  gap: 55px;
+  margin: 55px auto 55px;
+}
+
+.sobre-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/*VOLUNTARIADO*/
+.voluntariado {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--contraste-leve-principal);
+  min-height: 600px;
+  width: 100%;
+  color: var(--branco);
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card-voluntariado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 570px;
+  width: 100%;
+}
+
+.texto-volu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.img-uniao {
+  max-height: 485px;
+  height: auto;
+  max-width: 100%;
+}
+
+/*IMAGEM RESPIRO*/
+.imagem-respiro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5vw 4vw;
+}
+#img-dog {
+  max-width: 1341px;
+  width: 100%;
+  height: auto;
+}
+
+/*CARDS INFORMATIVOS*/
+.cards-informativos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch; /*os cards ficam com a mesma altura, independente do tamanho dos textos*/
+  color: var(--branco);
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.cards-informativos > * {
+  flex: 1 1 422px;
+}
+
+.card-info-geral {
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  padding: 50px 40px;
+  max-width: 550px;
+  gap: 2vw;
+}
+
+.castracao {
+  background-color: var(--secundaria);
+}
+
+.doencas {
+  background-color: var(--principal);
+}
+
+.procura {
   background-color: var(--secundaria);
 }
 
@@ -239,6 +348,25 @@ p {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .sobre {
+    padding: 0 20px;
+  }
+
+  .voluntariado {
+    flex-direction: column;
+    min-height: auto;
+    padding: 40px 0;
+  }
+
+  .card-voluntariado {
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+
+  .img-uniao {
+    max-height: 250px;
   }
 }
 
