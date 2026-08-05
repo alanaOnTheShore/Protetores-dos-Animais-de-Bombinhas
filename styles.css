@@ -40,7 +40,13 @@ p {
 h3 {
   line-height: 1.5;
   font-weight: 600;
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-size: clamp(1.25rem, 3.15vw, 1.75rem);
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2.85vw, 1.6rem);
+  margin-bottom: 30px;
+  font-weight: 500;
 }
 
 /*LOGO*/
@@ -279,6 +285,80 @@ h3 {
   background-color: var(--secundaria);
 }
 
+/*DOAR*/
+.doar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-start; /*CONFERIR ADEQUAÇÃO COM O QR CORRETO*/
+  justify-content: space-between;
+  padding: 8%;
+  gap: 30px;
+}
+
+.doar p {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+}
+
+.doar span {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.qrcode {
+  text-align: center;
+}
+
+/*CONTATO*/
+.contato {
+  background-color: var(--principal);
+  color: var(--branco);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.endereco p {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.endereco iframe {
+  max-width: 100%;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.redes-sociais span {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.redes-sociais a:hover {
+  color: var(--secundaria);
+}
+
+.logo-footer {
+  align-self: center;
+}
+
+/*FOOTER*/
+.footer {
+  background-color: var(--principal);
+  color: var(--branco);
+  text-align: center;
+  padding: 20px;
+}
 /***TELAS MENORES***/
 /*menu hamburguer*/
 #hamburguer {
