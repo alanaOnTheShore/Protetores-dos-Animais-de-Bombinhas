@@ -359,6 +359,9 @@ h4 {
   text-align: center;
   padding: 20px;
 }
+.footer p {
+  font-size: clamp(0.75rem, 1vw, 1rem);
+}
 
 /*BTN VOLTAR AO TOPO*/
 .btn-voltar {
