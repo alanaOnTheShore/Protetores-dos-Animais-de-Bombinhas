@@ -20,13 +20,13 @@
           <img src="img/logo.png" alt="logo" class="logo-topo" />
           <p class="sublogo">ONG Protetores dos Animais de Bombinhas</p>
         </div>
-        <button id="hamburguer">☰</button>
+        <button id="hamburguer" aria-label="Menu">☰</button>
         <ul class="menu" id="menu">
           <li><a href="#topo">Home</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#vonluntariado">Voluntariado</a></li>
-          <li><a href="">Doar</a></li>
-          <li><a href="">Contato</a></li>
+          <li><a href="#doar">Doar</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
       <div class="CTA">
@@ -54,7 +54,7 @@
           </p>
           <p>Apoie a nossa iniciativa!</p>
         </div>
-        <a class="btn-simples" href="">Doar</a>
+        <a class="btn-simples" href="#doar">Doar</a>
       </div>
     </section>
     <!--SOBRE-->
@@ -82,7 +82,7 @@
           ambiente que os expõe a diversos perigos.
         </p>
       </div>
-      <img src="img/pet-rua.png" alt="pet-na-rua" />
+      <img src="/img/pet-rua.png" alt="pet-na-rua" />
     </section>
     <!--VOLUNTARIADO-->
     <section id="vonluntariado" class="voluntariado">
@@ -97,13 +97,13 @@
           </p>
           <p>Entre em contato conosco e descubra como somar a essa luta!</p>
         </div>
-        <a class="btn-simples" href="">Contato</a>
+        <a class="btn-simples" href="#contato">Contato</a>
       </div>
-      <img src="img/uniao.png" alt="imagem-de-uniao" class="img-uniao" />
+      <img src="/img/uniao.png" alt="imagem-de-uniao" class="img-uniao" />
     </section>
     <!--IMAGEM-->
     <div class="imagem-respiro">
-      <img src="img/dog.png" alt="imagem-cachorro" id="img-dog" />
+      <img src="/img/dog.png" alt="imagem-cachorro" id="img-dog" />
     </div>
     <!--CARDS INFORMATIVOS-->
     <section class="cards-informativos" id="cards-informativos">
@@ -129,6 +129,82 @@
         </p>
       </div>
     </section>
+    <!--DOAR-->
+    <section id="doar" class="doar">
+      <div class="textos-doacao">
+        <h3>Ajude a continuar este trabalho!</h3>
+        <!--PIX-->
+        <p>Doe pelo Pix:</p>
+        <span>Chave: </span>
+        <span>26.733.461/0001-67</span>
+        <!--CONTA-->
+        <p>Ou diretamente para a conta:</p>
+        <span>SICREDI <br />Agência:</span>
+        <span> 2606<br /></span>
+        <span>Conta Corrente:</span>
+        <span> 2638-3<br /></span>
+        <span>CNPJ:</span>
+        <span> 26.733.461/0001-67</span>
+      </div>
+      <div class="qrcode">
+        <img src="img/qr-de-exemplo.png" alt="qr-de-exemplo" />
+        <p>Escaneie para doar via Pix</p>
+        <span>*QR ilustrativo</span>
+      </div>
+    </section>
+
+    <!--CONTATO-->
+    <section id="contato" class="contato">
+      <!--endereco-->
+      <div class="endereco">
+        <h4>Encontre-nos no endereço:</h4>
+        <iframe
+          id="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.206228685802!2d-48.513170028092695!3d-27.149800851206695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8a447e3d5039b%3A0xc3155f8365a3ab1a!2sR.%20Sanha%C3%A7u%2C%20712%20-%20Bombas%2C%20Bombinhas%20-%20SC%2C%2088215-000!5e0!3m2!1spt-BR!2sbr!4v1785883083761!5m2!1spt-BR!2sbr"
+          width="500"
+          height="350"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+        <p>Rua Sanhaçu, 712 - Bombas - Bombinhas/SC</p>
+      </div>
+
+      <!--redes sociais-->
+      <div class="redes-sociais">
+        <h4>Entre em contato conosco:</h4>
+        <strong>Instagram:</strong>
+        <span
+          ><a
+            href="https://www.instagram.com/protetoresdebombinhas/"
+            target="_blank"
+            >@protetoresdebombinhas</a
+          ></span
+        >
+        <strong>Facebook:</strong>
+        <span
+          ><a
+            href="https://www.facebook.com/loucosporcachorro/?locale=pt_BR"
+            target="_blank"
+            >loucosporcachorro</a
+          ></span
+        >
+        <strong>Whatsapp:</strong>
+        <span
+          ><a
+            href="https://api.whatsapp.com/send/?phone=5547997964177"
+            target="_blank"
+            >+55 (47) 99769-4177</a
+          ></span
+        >
+        <!--logo-->
+        <div class="logo-footer"><img src="img/logo.png" alt="logo" /></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Copyright © 2026 - Protetores dos Animais de Bombinhas</p>
+    </footer>
   </body>
   <script src="script.js"></script>
 </html>
