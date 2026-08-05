@@ -9,7 +9,7 @@ menuHamburger.addEventListener("click", function () {
 //BOTAO VOLTAR AO TOPO
 const btn = document.getElementById("btn-voltar");
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 300) {
+  if (window.scrollY > 450) {
     btn.style.display = "flex";
   } else {
     btn.style.display = "none";
